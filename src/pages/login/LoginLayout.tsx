@@ -1,13 +1,12 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 import {
-  Card,
   Input,
   Button,
   Switch,
   Typography,
 } from '@material-tailwind/react'
 
-export const Login: React.FC<Component> = () => {
+export const Login: React.FC<any> = () => {
   const [ showPassword, setShowPassword] = useState<boolean>(false)
   return (
     <div className='pt-32 w-screen flex justify-center items-center'>

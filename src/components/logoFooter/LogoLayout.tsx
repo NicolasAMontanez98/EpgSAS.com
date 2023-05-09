@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const te_respaldamos = (await import('../../assets/logo/te_respaldamos.png')).default
+import te_respaldamos from '../../assets/logo/te_respaldamos.png'
 
-export const LogoFooter = () => {
+export const LogoFooter: React.FC<any> = () => {
   return (
     <div className='fixed left-0 -bottom-2 p-0 z-50'>
         <motion.img

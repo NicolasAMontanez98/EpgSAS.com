@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillHome } from 'react-icons/ai'
 import { BsPeopleFill, BsYoutube } from 'react-icons/bs'
@@ -7,11 +7,9 @@ import { MdMiscellaneousServices, MdContactSupport } from 'react-icons/md'
 import { SiTiktok } from 'react-icons/si'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
 
-export const Navbar: React.FC<Component> = () => {
+export const Navbar: React.FC<any> = () => {
   const [ activeOption, updateActiveOption ] = useState<string>('')
-  const navigate = useNavigate()
 
   const getMotionLi = (text: string, id: string) => {
     return (

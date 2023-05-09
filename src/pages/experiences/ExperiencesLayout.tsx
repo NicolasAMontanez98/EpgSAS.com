@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { FaChessKnight, FaChessPawn, FaChessQueen, FaChessRook, FaChessBishop } from 'react-icons/fa'
 
-export const Experiences: React.FC<Component> = () => {
+export const Experiences: React.FC<any> = () => {
   const experiences = [
     {
       title: 'Evento de Gestión de Conocimiento de prácticas significativas a nivel nacional del Departamento Nacional de Planeación DNP del 2020',
@@ -48,10 +48,6 @@ export const Experiences: React.FC<Component> = () => {
     <motion.span><FaChessBishop color='#9A0606' size={55} /></motion.span>,
     <motion.span><FaChessPawn color='#9A0606' size={55} /></motion.span>,
   ]
-
-  const getRandom = (min: number, max: number) => {
-    return parseInt(`${Math.random() * (max - min) + min}`)
-  }
 
   return (
     <div className='pt-32 w-screen flex flex-col justify-end items-center about-us-screen'>

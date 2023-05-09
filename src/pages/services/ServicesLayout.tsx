@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaHandshake, FaChalkboardTeacher } from 'react-icons/fa'
 import { HiDocumentReport } from 'react-icons/hi'
@@ -7,11 +7,11 @@ import { GoGitPullRequest } from 'react-icons/go'
 import { BsClipboard2DataFill, BsFileEarmarkBarGraphFill } from 'react-icons/bs'
 import { IoMdClose } from 'react-icons/io'
 
-const mipg = (await import('../../assets/logo/mipg.png')).default
+import mipg from '../../assets/logo/mipg.png'
 
-const tu_ventanilla = (await import('../../assets/logo/LOGO TÚ VENTANILLA (isotipo).png')).default
+import tu_ventanilla from '../../assets/logo/LOGO TÚ VENTANILLA (isotipo).png'
 
-export const Services: React.FC<Component> = () => {
+export const Services: React.FC<any> = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const services: any[] = [
     {

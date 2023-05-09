@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
-const team_response = await import('../../assets/team-epg-transparent.png')
-const team = team_response.default
+import team from '../../assets/team-epg-transparent.png'
 
-export const Home: React.FC<Component> = () => {
+export const Home: React.FC<any> = () => {
   return (
     <main className='pt-4 w-screen h-screen flex justify-center items-center overflow-y-hidden'>
       <div className='w-4/12 text-right'>

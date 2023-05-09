@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
-const epg_logo_src = (await import('../../assets/logo/Logo EPG Sin Letras.png')).default
+import epg_logo_src from '../../assets/logo/Logo EPG Sin Letras.png'
 
-export const Logo: React.FC<Component> = () => {
+export const Logo: React.FC<any> = () => {
   const navigate = useNavigate()
   return (
     <div className='absolute left-0 p-3'>

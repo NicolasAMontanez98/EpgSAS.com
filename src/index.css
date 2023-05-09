@@ -19,3 +19,16 @@
 
   overflow-x: hidden;
 }
+
+.epg-red {
+  color: #9A0606;
+}
+.font-title {
+  font-family: 'Patua One', cursive;
+}
+.font-text {
+  font-family: 'Open Sans', sans-serif;
+}
+.font-quote {
+  font-family: 'Space Grotesk', sans-serif;
+}
