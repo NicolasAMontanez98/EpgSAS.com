@@ -1,8 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-import team from '../../assets/team-epg-transparent.png'
-
 export const Home: React.FC<any> = () => {
   return (
     <main className='pt-4 w-screen h-3/4 lg:h-screen flex flex-col lg:flex-row justify-center items-center items-center overflow-y-hidden pb-40 lg:pb-0'>
