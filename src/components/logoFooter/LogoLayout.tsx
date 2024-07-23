@@ -5,7 +5,7 @@ import te_respaldamos from '../../assets/logo/te_respaldamos.png'
 
 export const LogoFooter: React.FC<any> = () => {
   return (
-    <div className='fixed left-0 -bottom-2 p-0 z-50'>
+    <div className='fixed -left-4 -bottom-5 p-4 z-50 bg-black bg-opacity-70 rounded-full lg:bg-transparent'>
         <motion.img
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}

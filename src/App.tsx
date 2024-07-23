@@ -7,7 +7,6 @@ import { Navbar } from '../src/components/navbar/NavbarLayout'
 import { Logo } from '../src/components/logo/LogoLayout'
 import { LogoFooter } from './components/logoFooter/LogoLayout'
 import { Infographs } from './pages/infographs/InfographsLayout'
-import { Login } from './pages/login/LoginLayout'
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Logo />
       <Navbar />
       <Routes>
-        <Route path='/login' element={<Login />}/>
         <Route path='/' element={<Home />}/>
         <Route path='/home' element={<Home />}/>
         <Route path='/services' element={<Services />}/>

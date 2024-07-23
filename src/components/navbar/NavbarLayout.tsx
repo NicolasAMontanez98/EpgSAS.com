@@ -52,7 +52,7 @@ export const Navbar: React.FC<any> = () => {
         {getMotionLi('Experiencias', 'experiences')}
         {getMotionLi('Infografías', 'infographs')}
       </ul>
-      <ul className='absolute right-4 bottom-4 gap-4'>
+      <ul className='absolute right-4 bottom-4 p-4 gap-4 bg-black bg-opacity-70 rounded-lg'>
         <Link to={'https://wa.link/d4ys2c'} target='_blank'>
           <motion.li
             className='flex items-center justify-center cursor-pointer rounded-full mb-2'

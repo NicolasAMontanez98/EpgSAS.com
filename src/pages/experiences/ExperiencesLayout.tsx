@@ -51,8 +51,8 @@ export const Experiences: React.FC<any> = () => {
 
   return (
     <div className='pt-32 w-screen flex flex-col justify-end items-center about-us-screen'>
-      <h1 className='text-6xl font-title mb-7 cursor-default'>Experiencias</h1>
-      <h3 className='font-text text-xl mb-3 w-9/12 indent-3 text-justify cursor-default'>
+      <h1 className='sm:text-6xl text-4xl font-title mb-7 cursor-default'>Experiencias</h1>
+      <h3 className='font-text text-xl mb-3 w-9/12 indent-3 text-left cursor-default'>
         Señor(a) Alcalde(sa), nos permitimos hacer una presentación
         de nuestro recorrido y experiencia en el sector público:
         Los siguientes son los resultados exitosos que se han logrado con un equipo de
@@ -61,8 +61,8 @@ export const Experiences: React.FC<any> = () => {
       </h3>
       <div className='w-9/12 my-8 grid grid-flow-row grids-cols-4 gap-4 rounded-lg'>
         {experiences?.map((_e, i: number) => (
-          <motion.article className={`col-span-${_e?.col} bg-white rounded-lg p-4 relative flex`} whileHover={{ scale: 1.1 }}>
-            <div className='w-1/12 flex items-center justify-start'>
+          <motion.article className={`col-span-${_e?.col} bg-white rounded-lg p-4 relative flex`}>
+            <div className='w-1/12 hidden lg:flex items-center justify-start'>
               {i <= chessPieces?.length-1 ? chessPieces[i] : chessPieces[i - chessPieces?.length]}
             </div>
             <div className='w-11/12'>

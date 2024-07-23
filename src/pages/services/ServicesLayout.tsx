@@ -84,10 +84,10 @@ export const Services: React.FC<any> = () => {
   ]
 
   return (
-    <div className='pt-32 w-screen flex flex-col justify-end items-center'>
-      <h1 className='text-6xl font-title mb-7 cursor-default'>Conoce nuestros servicios</h1>
+    <div className='pt-32 w-screen h-full flex flex-col justify-start items-center overflow-hidden'>
+      <h1 className='sm:text-6xl text-4xl w-3/4 text-center font-title mb-7 cursor-default'>Conoce nuestros servicios</h1>
       <h3 className='font-text text-xl mb-3 w-9/12 indent-3 text-center cursor-default'>Aquí encontrarás todos nuestros servicios y una breve descripción de los mismos.</h3>
-      <ul className='w-4/5 divide-y divide-dash divide-slate-950 mb-7'>
+      <ul className='w-4/5 sm:h-full h-1/2 overflow-scroll divide-y divide-dash divide-slate-950 mb-7 rounded-2xl'>
         {services?.map((_s, i: number) => (
           <motion.li
             className={`bg-white cursor-help flex justify-start items-center gap-4 px-3 py-4 ${i === 0 ? 'rounded-t-2xl' : i === services?.length -1 ? 'rounded-b-2xl': ''} text-white`}
@@ -98,12 +98,11 @@ export const Services: React.FC<any> = () => {
               stiffness: 260,
               damping: 20
             }}
-            whileHover={{ scale: 1.05 }}
             key={_s?.id}
             layoutId={_s?.id}
             onClick={() => setSelectedId(`service-${i}`)}
           >
-            {_s?.icon}
+            <span>{_s?.icon}</span>
             <h3 className='text-gray-950 text-lg font-medium'>{_s?.description}</h3>
           </motion.li>
         ))}
